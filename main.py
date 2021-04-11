@@ -33,4 +33,4 @@ if uploaded_file is not None:
     #st.text(uploaded_file.getvalue())
     st.text(uploaded_file.getvalue().decode())
     for i, line in enumerate(uploaded_file.getvalue().decode('utf-8').splitlines()):
-        st.text(f'{i}, {line}')
+        st.text(f'{i}, {line}'.rstrip())
